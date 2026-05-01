@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 
+=======
+## Gen711/811 Practical Exam 2026 — Version B
+## NAME: Hannah Muskavitch 
+>>>>>>> origin/main
 
 Exam Instructions:
 - Make sure to paste all the commands that you use below each of the tasks.
@@ -21,7 +26,11 @@ Hints:
 
 1. Use an absolute path to change your current working directory to the `GEN711_811_Practical-Exam` directory that you just cloned (2 points).
 
+<<<<<<< HEAD
 cd /home/users/hjm1079/GEN711_811_Practical-Exam
+=======
+cd /home/users/hjm1079/GEN711_811_Practical-Exam 
+>>>>>>> origin/main
 
 2. From `GEN711_811_Practical-Exam`, make the following directory structure in a single command: `analysis/untrimmed_fastq` (2 points, -1 point if you need to use 2 commands for this. Hint: There is a flag/option that lets you create nested directories all at once.)
 
