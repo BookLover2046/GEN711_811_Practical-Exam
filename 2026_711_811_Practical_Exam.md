@@ -1,5 +1,4 @@
-## Gen711/811 Practical Exam 2026 — Version B
-## NAME: MYNAME
+
 
 Exam Instructions:
 - Make sure to paste all the commands that you use below each of the tasks.
@@ -22,27 +21,37 @@ Hints:
 
 1. Use an absolute path to change your current working directory to the `GEN711_811_Practical-Exam` directory that you just cloned (2 points).
 
-
+cd /home/users/hjm1079/GEN711_811_Practical-Exam
 
 2. From `GEN711_811_Practical-Exam`, make the following directory structure in a single command: `analysis/untrimmed_fastq` (2 points, -1 point if you need to use 2 commands for this. Hint: There is a flag/option that lets you create nested directories all at once.)
 
-
+mkdir analysis | mkdir untrimmed_fastq | mv untrimmed_fastq analysis
 
 3. Copy the two fastq files in the `Data/` directory directly into your `analysis/untrimmed_fastq` directory **without changing your current directory**. (2 points, partial credit if you need to change directories first. Multiple correct answers)
 
-
+cp Data/WELMw0518231_S614_L002_R1_001.fastq.gz analysis/untrimmed_fastq/
+cp Data/WELMw0518231_S614_L002_R2_001.fastq.gz analysis/untrimmed_fastq/
 
 4. List all the hidden files in this repo. Paste the command and the output below (2 points)
 
-
+ls -a | grep "^\\."
+.
+..
+.git
+.gitignore
 
 5. Use a relative path to change your current working directory to the `analysis/untrimmed_fastq` directory. (2 points)
 
-
+cd analysis/untrimmed_fastq/
 
 6. These are paired-end Illumina 16S rRNA amplicon FASTQ files. To confirm the files look ok, view one of them and paste the command and top 4 lines below. (4 points, Hint: These files are gzip-compressed. Multiple correct answers)
 
-
+gunzip WELMw0518231_S614_L002_R1_001.fastq.gz
+head -n4 WELMw0518231_S614_L002_R1_001.fastq 
+@A01346:131:HTHT7DRX3:2:2101:10917:1047 1:N:0:AACACCAC+GCTGTAAG
+GTACACACCGCCCGTCGCTCCTACCGCTTGAGTGATCCGGTGAATAATTTGGACTGCTGCAATGCTCAGTTACTGACATTGTGGTGGGAAATCTAGGGAACCTTATCACTTAGTGGAAGGAGACGGCGTAACAATGTTTCCGTAGGTGAACCTGCAGAAGTATCACTGTCTGTTATACACATCTCCGAGACCACGAGACAACACAACAACGCGTCTGCCCTGTGATTCTTGAAGAT
++
+FFF,,FFFF::FFFF:FFFFFFFFFF,F,,F:::F,,F,FF,,:FFFFF:,FFFFFF,,:F,,:,:,F,FFF,FFF:,,FF::,FFF::FFFFFF,,FFF,FFFFFFFFF,F,,FFF:FFF:,,,,,,F:FF::,:FFFF,:,FF:FFFFFFFFFFFF::,,F,:FFFF,,,F,F,:F:FF,FFF,F:,,FFFFFF:,,F,,FF,,F,,:,,F:,FF,,,F,,,,F,:,,F,:,::
 
 7. How large (file size) are the two fastq files? Use a single command with appropriate options to show the file sizes in a human-readable format (e.g., MB). Paste the command and output below. (2 points)
 
